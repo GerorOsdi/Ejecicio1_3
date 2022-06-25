@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejecicio1_3.View.regPersona">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombres" FontSize="Medium" FontAttributes="Italic"/>
+            <Entry x:Name="txtNombres" Placeholder="Ingresar nombres" HorizontalOptions="Fill" FontSize="Subtitle" FontAttributes="Italic" Margin="0,0,0,10" Keyboard="Chat"/>
+
+            <Label Text="Apellidos" FontSize="Medium" FontAttributes="Italic"/>
+            <Entry x:Name="txtApellidos" Placeholder="Ingresar apellidos" HorizontalOptions="Fill" FontSize="Subtitle" FontAttributes="Italic" Margin="0,0,0,10"/>
+
+            <Label Text="Edad" FontSize="Medium" FontAttributes="Italic"/>
+            <Entry x:Name="txtEdad" Placeholder="Ingresar edad" HorizontalOptions="Fill" FontSize="Subtitle" FontAttributes="Italic" Margin="0,0,0,10" Keyboard="Numeric"/>
+
+            <Label Text="Correo" FontSize="Medium" FontAttributes="Italic"/>
+            <Entry x:Name="txtCorreo" Placeholder="Ingresar correo electronico" HorizontalOptions="Fill" FontSize="Subtitle" FontAttributes="Italic" 
+               Margin="0,0,0,10" Keyboard="Email"/>
+
+            <Label Text="Dirección" FontSize="Medium" FontAttributes="Italic"/>
+            <Entry x:Name="txtDireccion" Placeholder="Ingresar dirección" HorizontalOptions="Fill" FontSize="Subtitle" FontAttributes="Italic" 
+               Margin="0,0,0,10" Keyboard="Text"/>
+
+            <Button Text="Update" x:Name="btnUpdate" Clicked="btnUpdate_Clicked" CornerRadius="5" BackgroundColor="DarkBlue" 
+                TextColor="White" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

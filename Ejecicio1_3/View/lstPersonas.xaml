@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejecicio1_3.View.lstPersonas"
+              BackgroundColor="LightGreen">
+
+    <CollectionView x:Name="viewPersonas" SelectionMode="Single" SelectionChanged="viewPersonas_SelectionChanged">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Padding="5" CornerRadius="10" IsClippedToBounds="False">
+                    <Grid HeightRequest="100">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".3*"/>
+                            <ColumnDefinition Width=".7*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".5*"/>
+                            <RowDefinition Height=".5*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.RowSpan="2" Text="{Binding Id}" FontSize="Large" FontAttributes="Bold" VerticalOptions="Center"/>
+                        <Label Grid.Column="1" Text="{Binding Nombres}" FontSize="15" Padding="0,0,0,0" HorizontalOptions="Fill"/>
+                        <Label Grid.Column="2" Text="{Binding Apellidos}" FontSize="15" Padding="0,0,0,0" HorizontalOptions="Fill"/>
+                        <Label Grid.Column="3" Text="{Binding Edad}" FontSize="15" Padding="0,0,0,0"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Direccion}"/>
+                        <Label Grid.Row="1" Grid.Column="2" Text="{Binding Correo}"/>
+                    </Grid>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+    
+</ContentPage>
